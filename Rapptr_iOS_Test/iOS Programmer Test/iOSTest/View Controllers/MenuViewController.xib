@@ -20,16 +20,6 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uvr-GZ-uh6">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98S-y4-Ws3">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="64" id="OOl-hG-SPg"/>
-                    </constraints>
-                    <color key="barTintColor" red="0.054901960780000002" green="0.36078431370000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <items>
-                        <navigationItem title="Coding Tasks" prompt=" " id="P6j-YE-xig"/>
-                    </items>
-                </navigationBar>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fUw-Ks-3hF">
                     <rect key="frame" x="30" y="233" width="315" height="207"/>
                     <subviews>
@@ -88,18 +78,33 @@
                         </button>
                     </subviews>
                 </stackView>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nau-s9-B21">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <color key="backgroundColor" red="0.054901960784313725" green="0.36078431372549019" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="lpF-JH-DsF"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.054901960780000002" green="0.36078431370000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Coding Tasks" prompt=" " id="iwx-qt-IWK"/>
+                    </items>
+                </navigationBar>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="98S-y4-Ws3" secondAttribute="trailing" id="0om-IF-STI"/>
                 <constraint firstAttribute="bottom" secondItem="fUw-Ks-3hF" secondAttribute="bottom" constant="227" id="6CM-sr-Ont"/>
-                <constraint firstItem="98S-y4-Ws3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6iM-VI-HRU"/>
                 <constraint firstAttribute="trailing" secondItem="fUw-Ks-3hF" secondAttribute="trailing" constant="30" id="D1L-pP-kV4"/>
                 <constraint firstItem="fUw-Ks-3hF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="QGr-5i-IIO"/>
                 <constraint firstAttribute="bottom" secondItem="Uvr-GZ-uh6" secondAttribute="bottom" id="eZB-Oi-ntP"/>
+                <constraint firstItem="Nau-s9-B21" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ewU-5l-GBM"/>
+                <constraint firstItem="Nau-s9-B21" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fP4-nv-cNk"/>
                 <constraint firstItem="Uvr-GZ-uh6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gKI-KO-8lX"/>
                 <constraint firstItem="fUw-Ks-3hF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="233" id="hpa-Z6-WuX"/>
-                <constraint firstItem="98S-y4-Ws3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kaJ-qv-J9Q"/>
+                <constraint firstAttribute="trailing" secondItem="Nau-s9-B21" secondAttribute="trailing" id="jil-YP-ad5"/>
                 <constraint firstItem="Uvr-GZ-uh6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mab-jW-93t"/>
                 <constraint firstAttribute="trailing" secondItem="Uvr-GZ-uh6" secondAttribute="trailing" id="rZM-FT-HBH"/>
             </constraints>
