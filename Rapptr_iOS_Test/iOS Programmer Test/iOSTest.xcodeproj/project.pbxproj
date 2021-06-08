@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D5D9401266FC59B008C5844 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D93FF266FC59A008C5844 /* ChatTableViewCell.swift */; };
+		3D5D9402266FC59B008C5844 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5D9400266FC59B008C5844 /* ChatTableViewCell.xib */; };
 		6900F5E121BF4726007AFBB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6900F5E021BF4726007AFBB8 /* Assets.xcassets */; };
 		F21312DA1E0481F80029E33F /* ChatClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F21312D71E0481F80029E33F /* ChatClient.m */; };
 		F21312DB1E0481F80029E33F /* LoginClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F21312D91E0481F80029E33F /* LoginClient.m */; };
 		F21312E11E0485B50029E33F /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21312DF1E0485B50029E33F /* AnimationViewController.xib */; };
-		F2603FCB202A404D001BCA22 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2603FC9202A404D001BCA22 /* ChatTableViewCell.swift */; };
-		F2603FCC202A404D001BCA22 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2603FCA202A404D001BCA22 /* ChatTableViewCell.xib */; };
 		F2603FCE202A407C001BCA22 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2603FCD202A407C001BCA22 /* AnimationViewController.swift */; };
 		F2603FD0202A4083001BCA22 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2603FCF202A4083001BCA22 /* ChatViewController.swift */; };
 		F2603FD2202A4089001BCA22 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2603FD1202A4089001BCA22 /* LoginViewController.swift */; };
@@ -28,14 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D5D93FF266FC59A008C5844 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		3D5D9400266FC59B008C5844 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		6900F5E021BF4726007AFBB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F21312D61E0481F80029E33F /* ChatClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatClient.h; path = Clients/ChatClient.h; sourceTree = "<group>"; };
 		F21312D71E0481F80029E33F /* ChatClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatClient.m; path = Clients/ChatClient.m; sourceTree = "<group>"; };
 		F21312D81E0481F80029E33F /* LoginClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginClient.h; path = Clients/LoginClient.h; sourceTree = "<group>"; };
 		F21312D91E0481F80029E33F /* LoginClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginClient.m; path = Clients/LoginClient.m; sourceTree = "<group>"; };
 		F21312DF1E0485B50029E33F /* AnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnimationViewController.xib; path = "View Controllers/AnimationViewController.xib"; sourceTree = "<group>"; };
-		F2603FC9202A404D001BCA22 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatTableViewCell.swift; path = Views/Cells/ChatTableViewCell.swift; sourceTree = "<group>"; };
-		F2603FCA202A404D001BCA22 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatTableViewCell.xib; path = Views/Cells/ChatTableViewCell.xib; sourceTree = "<group>"; };
 		F2603FCD202A407C001BCA22 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationViewController.swift; path = "View Controllers/AnimationViewController.swift"; sourceTree = "<group>"; };
 		F2603FCF202A4083001BCA22 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = "View Controllers/ChatViewController.swift"; sourceTree = "<group>"; };
 		F2603FD1202A4089001BCA22 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "View Controllers/LoginViewController.swift"; sourceTree = "<group>"; };
@@ -141,8 +141,8 @@
 		F273B62E1D95B1BE0069037F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				F2603FC9202A404D001BCA22 /* ChatTableViewCell.swift */,
-				F2603FCA202A404D001BCA22 /* ChatTableViewCell.xib */,
+				3D5D93FF266FC59A008C5844 /* ChatTableViewCell.swift */,
+				3D5D9400266FC59B008C5844 /* ChatTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -267,8 +267,8 @@
 				F264BDB71D7F503300275D46 /* MenuViewController.xib in Resources */,
 				F264BDD21D7F641200275D46 /* ChatViewController.xib in Resources */,
 				6900F5E121BF4726007AFBB8 /* Assets.xcassets in Resources */,
+				3D5D9402266FC59B008C5844 /* ChatTableViewCell.xib in Resources */,
 				F21312E11E0485B50029E33F /* AnimationViewController.xib in Resources */,
-				F2603FCC202A404D001BCA22 /* ChatTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +286,8 @@
 				F2603FD0202A4083001BCA22 /* ChatViewController.swift in Sources */,
 				F2603FCE202A407C001BCA22 /* AnimationViewController.swift in Sources */,
 				F21312DA1E0481F80029E33F /* ChatClient.m in Sources */,
+				3D5D9401266FC59B008C5844 /* ChatTableViewCell.swift in Sources */,
 				F21312DB1E0481F80029E33F /* LoginClient.m in Sources */,
-				F2603FCB202A404D001BCA22 /* ChatTableViewCell.swift in Sources */,
 				F264BD9E1D7F4F0400275D46 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

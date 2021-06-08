@@ -9,7 +9,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="iOSTest" customModuleProvider="target">
             <connections>
-                <outlet property="navBar" destination="rTW-RK-icP" id="9j4-uX-XDU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,84 +17,93 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzi-lm-e0f" userLabel="UIButton">
-                    <rect key="frame" x="153" y="318" width="69" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.63197451829999995" green="0.66627806430000003" blue="0.68627852199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Chat">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                            <integer key="value" value="8"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="didPressChatButton:" destination="-1" eventType="touchUpInside" id="g9u-XN-doi"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUz-VA-qVL" userLabel="UIButton">
-                    <rect key="frame" x="153" y="371" width="69" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.83137828110000001" green="0.83136254549999999" blue="0.83137315509999998" alpha="0.79130907879759937" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Login">
-                        <color key="titleColor" red="0.10588235294117647" green="0.11764705882352941" blue="0.12156862745098039" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="8"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="didPressLoginButton:" destination="-1" eventType="touchUpInside" id="Coc-Ko-4wE"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osJ-En-yDn" userLabel="UIButton">
-                    <rect key="frame" x="153" y="413" width="69" height="47"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.75349509719999996" green="0.78791946170000005" blue="0.80392509700000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Animation">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="8"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="didPressAnimationButton:" destination="-1" eventType="touchUpInside" id="zkd-5Z-cIm"/>
-                    </connections>
-                </button>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTW-RK-icP">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
-                    <color key="barTintColor" red="0.054901960784313725" green="0.36078431372549019" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
-                    <textAttributes key="titleTextAttributes">
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </textAttributes>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uvr-GZ-uh6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98S-y4-Ws3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="OOl-hG-SPg"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.054901960780000002" green="0.36078431370000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                     <items>
-                        <navigationItem title="Coding Tasks" prompt=" " id="seL-4q-jPa"/>
+                        <navigationItem title="Coding Tasks" prompt=" " id="P6j-YE-xig"/>
                     </items>
                 </navigationBar>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_home_menu" translatesAutoresizingMaskIntoConstraints="NO" id="TB3-yv-JcB">
-                    <rect key="frame" x="0.0" y="14" width="375" height="639"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fUw-Ks-3hF">
+                    <rect key="frame" x="30" y="233" width="315" height="207"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1Q-2o-PkT" userLabel="UIButton">
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="53"/>
+                            <color key="backgroundColor" red="0.63197451829999995" green="0.66627806430000003" blue="0.68627852199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <size key="titleShadowOffset" width="0.0" height="55"/>
+                            <state key="normal" title="Chat">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didPressChatButton:" destination="-1" eventType="touchUpInside" id="ZBG-xc-nqE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGF-De-Oj8" userLabel="UIButton">
+                            <rect key="frame" x="0.0" y="77" width="315" height="53"/>
+                            <color key="backgroundColor" red="0.83137828110000001" green="0.83136254549999999" blue="0.83137315509999998" alpha="0.79130907880000001" colorSpace="custom" customColorSpace="displayP3"/>
+                            <size key="titleShadowOffset" width="0.0" height="55"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" red="0.1058823529" green="0.1176470588" blue="0.1215686275" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didPressLoginButton:" destination="-1" eventType="touchUpInside" id="D6u-M9-Smh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvv-Hl-tZa" userLabel="UIButton">
+                            <rect key="frame" x="0.0" y="154" width="315" height="53"/>
+                            <color key="backgroundColor" red="0.75349509719999996" green="0.78791946170000005" blue="0.80392509700000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <size key="titleShadowOffset" width="0.0" height="55"/>
+                            <state key="normal" title="Animation">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didPressAnimationButton:" destination="-1" eventType="touchUpInside" id="0wY-l7-rQC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="rTW-RK-icP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0jE-6S-xPD"/>
-                <constraint firstItem="rTW-RK-icP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zyx-jO-N05"/>
-                <constraint firstAttribute="trailing" secondItem="rTW-RK-icP" secondAttribute="trailing" id="c6l-gx-Cg7"/>
+                <constraint firstAttribute="trailing" secondItem="98S-y4-Ws3" secondAttribute="trailing" id="0om-IF-STI"/>
+                <constraint firstAttribute="bottom" secondItem="fUw-Ks-3hF" secondAttribute="bottom" constant="227" id="6CM-sr-Ont"/>
+                <constraint firstItem="98S-y4-Ws3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6iM-VI-HRU"/>
+                <constraint firstAttribute="trailing" secondItem="fUw-Ks-3hF" secondAttribute="trailing" constant="30" id="D1L-pP-kV4"/>
+                <constraint firstItem="fUw-Ks-3hF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="QGr-5i-IIO"/>
+                <constraint firstAttribute="bottom" secondItem="Uvr-GZ-uh6" secondAttribute="bottom" id="eZB-Oi-ntP"/>
+                <constraint firstItem="Uvr-GZ-uh6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gKI-KO-8lX"/>
+                <constraint firstItem="fUw-Ks-3hF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="233" id="hpa-Z6-WuX"/>
+                <constraint firstItem="98S-y4-Ws3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kaJ-qv-J9Q"/>
+                <constraint firstItem="Uvr-GZ-uh6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mab-jW-93t"/>
+                <constraint firstAttribute="trailing" secondItem="Uvr-GZ-uh6" secondAttribute="trailing" id="rZM-FT-HBH"/>
             </constraints>
             <point key="canvasLocation" x="551.20000000000005" y="312.59370314842579"/>
         </view>
     </objects>
-    <resources>
-        <image name="bg_home_menu" width="375" height="667"/>
-    </resources>
 </document>
