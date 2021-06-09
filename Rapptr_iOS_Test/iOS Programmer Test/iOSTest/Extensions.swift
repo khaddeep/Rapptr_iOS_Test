@@ -53,6 +53,7 @@ struct Utils {
 }
 
 
+
 extension UIImageView {
     
     func downloaded(from url: URL, contentMode mode: ContentMode = .scaleAspectFit) {
@@ -69,9 +70,17 @@ extension UIImageView {
             }
         }.resume()
     }
+    
     func downloaded(from link: String, contentMode mode: ContentMode = .scaleAspectFit) {
         guard let url = URL(string: link) else { return }
         downloaded(from: url, contentMode: mode)
     }
 }
 
+extension UITextField {
+    func setLeftPaddingPoints(_ amount:CGFloat){
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
+        self.leftView = paddingView
+        self.leftViewMode = .always
+    }
+}

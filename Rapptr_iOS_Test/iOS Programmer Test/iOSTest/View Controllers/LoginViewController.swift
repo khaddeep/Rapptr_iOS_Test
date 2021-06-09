@@ -29,12 +29,23 @@ class LoginViewController: UIViewController {
     
     // MARK: - Properties
     private var client: LoginClient?
-    let loginCLient:LoginClient = LoginClient()
-    
+    var loginCLient:LoginClient = LoginClient()
+    private var isSuccessful: Bool = false
+    private var message: String = ""
+    private var apiCallTime: Double = 0
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+   
+   
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Login"
+        txtEmail.setLeftPaddingPoints(24)
+        txtPassword.setLeftPaddingPoints(24)
+        DispatchQueue.main.async {
+                self.txtEmail.becomeFirstResponder()
+                self.txtPassword.becomeFirstResponder()
+            }
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,8 +61,34 @@ class LoginViewController: UIViewController {
     
     @IBAction func didPressLoginButton(_ sender: Any) {
         // get login details from the view
-        loginCLient.login(withEmail: "info@rapptrlabs.com", password: "Test123") { (response) in
-            print(response?.description)
+        if txtEmail.text == "" || txtPassword.text == ""
+              {
+            Utils.showAlertMessageWithOK(message: "Enter Username and Password", parentView: self)
+        }else{
+            let methodStart = Date()
+            loginCLient.login(withEmail: txtEmail.text, password: txtPassword.text) { [self] (response) in
+                let responseCode = response?["code"] as? String
+               let responseMessage = response?["message"] as? String
+                            if responseCode == "Error" {
+                                self.message.append(responseCode ?? "Error Parsing Code")
+                                self.isSuccessful=false
+                            }else {
+                                self.message.append(responseMessage ?? "Error Parsing Message")
+                                self.isSuccessful=true
+            }
+                
+                let methodFinish = Date()
+                let executionTime = methodFinish.timeIntervalSince(methodStart)
+                apiCallTime=executionTime
+        }
+            if isSuccessful==false {
+                Utils.showAlertMessageWithOK(message: message+"\nAPI call in milliseconds: "+String(apiCallTime), parentView: self)
+                message=""
+            }else{
+                Utils.showAlertMessageWithOK(message: message+"\nAPI call in milliseconds: "+String(apiCallTime), parentView: self)
+                message=""
+            }
+        }
         }
     }
-}
+

@@ -22,11 +22,11 @@
                     <rect key="frame" x="0.0" y="80" width="375" height="587"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o39-B4-vGw">
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERj-dG-7xd">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <color key="backgroundColor" red="0.054901960780000002" green="0.36078431370000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="64" id="zaZ-5E-aic"/>
+                        <constraint firstAttribute="height" constant="64" id="qCv-dT-zOT"/>
                     </constraints>
                     <color key="barTintColor" red="0.054901960780000002" green="0.36078431370000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <textAttributes key="titleTextAttributes">
@@ -34,15 +34,17 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </textAttributes>
                     <items>
-                        <navigationItem title="Chat" prompt=" " id="hQu-DB-kYN">
-                            <barButtonItem key="leftBarButtonItem" style="plain" id="KzC-4b-yze">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vRE-xX-sBZ">
-                                    <rect key="frame" x="16" y="34" width="63" height="44"/>
+                        <navigationItem title="CHAT" prompt=" " id="MvQ-kw-AWD">
+                            <barButtonItem key="leftBarButtonItem" style="plain" id="khe-mW-1Vz">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eZB-m9-c27">
+                                    <rect key="frame" x="16" y="34" width="128" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <state key="normal" image="chevron.backward" catalog="system"/>
+                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" image="chevron.backward" catalog="system">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
                                     <connections>
-                                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="ipm-Lf-Avl"/>
+                                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="67p-YN-8dx"/>
                                     </connections>
                                 </button>
                             </barButtonItem>
@@ -50,15 +52,15 @@
                     </items>
                 </navigationBar>
             </subviews>
-            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="tOq-9z-JVj" firstAttribute="top" secondItem="o39-B4-vGw" secondAttribute="bottom" constant="16" id="ATI-xs-40K"/>
-                <constraint firstItem="tOq-9z-JVj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JoZ-dL-ZLI"/>
-                <constraint firstAttribute="bottom" secondItem="tOq-9z-JVj" secondAttribute="bottom" id="Qsy-nX-7sf"/>
-                <constraint firstItem="o39-B4-vGw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SFe-E4-Rvk"/>
-                <constraint firstAttribute="trailing" secondItem="o39-B4-vGw" secondAttribute="trailing" id="bKm-Ye-Lti"/>
-                <constraint firstItem="o39-B4-vGw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mZu-1L-xuH"/>
-                <constraint firstAttribute="trailing" secondItem="tOq-9z-JVj" secondAttribute="trailing" id="zGK-at-Mii"/>
+                <constraint firstItem="ERj-dG-7xd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="30V-HH-ky3"/>
+                <constraint firstItem="tOq-9z-JVj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HyA-81-mNl"/>
+                <constraint firstAttribute="trailing" secondItem="tOq-9z-JVj" secondAttribute="trailing" id="Iy0-vu-qDr"/>
+                <constraint firstAttribute="trailing" secondItem="ERj-dG-7xd" secondAttribute="trailing" id="WUQ-cr-Jrd"/>
+                <constraint firstItem="ERj-dG-7xd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ePV-0q-ps6"/>
+                <constraint firstItem="tOq-9z-JVj" firstAttribute="top" secondItem="ERj-dG-7xd" secondAttribute="bottom" constant="16" id="vMX-iT-mcW"/>
+                <constraint firstAttribute="bottom" secondItem="tOq-9z-JVj" secondAttribute="bottom" id="yBW-aJ-1ax"/>
             </constraints>
             <point key="canvasLocation" x="100" y="54.422788605697157"/>
         </view>
