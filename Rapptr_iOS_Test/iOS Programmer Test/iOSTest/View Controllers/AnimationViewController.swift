@@ -6,6 +6,7 @@
 
 import UIKit
 
+
 class AnimationViewController: UIViewController {
     
     /**
@@ -23,10 +24,10 @@ class AnimationViewController: UIViewController {
      *
      **/
     
+    @IBOutlet weak var imgLogo: UIImageView!
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Animation"
     }
     
     // MARK: - Actions
@@ -36,5 +37,7 @@ class AnimationViewController: UIViewController {
     }
     
     @IBAction func didPressFade(_ sender: Any) {
+       let anime = UtilsAnime();
+        anime.fadeInOut(image: imgLogo, minOpacity: 0, maxOpacity: 1, duration: 3)
     }
 }

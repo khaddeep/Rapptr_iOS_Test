@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3D5D9401266FC59B008C5844 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D93FF266FC59A008C5844 /* ChatTableViewCell.swift */; };
+		3DAF1A3B267054E800B06F5A /* UtilsAnime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF1A3A267054E800B06F5A /* UtilsAnime.swift */; };
+		3DAF1A3F2671082000B06F5A /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF1A3E2671082000B06F5A /* ChatTableViewCell.xib */; };
+		3DAF1A412671084600B06F5A /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF1A402671084600B06F5A /* ChatViewController.xib */; };
+		3DAF1A4326710AE900B06F5A /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF1A4226710AE900B06F5A /* MenuViewController.xib */; };
 		3DF2A9A0266FFFB900B9655B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2A99F266FFFB900B9655B /* Extensions.swift */; };
-		3DF2A9A22670006A00B9655B /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DF2A9A12670006A00B9655B /* ChatTableViewCell.xib */; };
-		3DF2A9A4267000ED00B9655B /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DF2A9A3267000ED00B9655B /* ChatViewController.xib */; };
 		6900F5E121BF4726007AFBB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6900F5E021BF4726007AFBB8 /* Assets.xcassets */; };
 		F21312DA1E0481F80029E33F /* ChatClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F21312D71E0481F80029E33F /* ChatClient.m */; };
 		F21312DB1E0481F80029E33F /* LoginClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F21312D91E0481F80029E33F /* LoginClient.m */; };
@@ -21,7 +23,6 @@
 		F2603FD4202A4092001BCA22 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2603FD3202A4092001BCA22 /* MenuViewController.swift */; };
 		F264BD9E1D7F4F0400275D46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F264BD9D1D7F4F0400275D46 /* main.m */; };
 		F264BDA11D7F4F0400275D46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F264BDA01D7F4F0400275D46 /* AppDelegate.m */; };
-		F264BDB71D7F503300275D46 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F264BDB51D7F503300275D46 /* MenuViewController.xib */; };
 		F264BDBE1D7F52E500275D46 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F264BDBD1D7F52E500275D46 /* LaunchScreen.xib */; };
 		F264BDD71D7F642200275D46 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F264BDD51D7F642200275D46 /* LoginViewController.xib */; };
 		F273B6411D95BD500069037F /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = F273B6401D95BD500069037F /* Message.m */; };
@@ -30,9 +31,11 @@
 
 /* Begin PBXFileReference section */
 		3D5D93FF266FC59A008C5844 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		3DAF1A3A267054E800B06F5A /* UtilsAnime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsAnime.swift; sourceTree = "<group>"; };
+		3DAF1A3E2671082000B06F5A /* ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		3DAF1A402671084600B06F5A /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		3DAF1A4226710AE900B06F5A /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		3DF2A99F266FFFB900B9655B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		3DF2A9A12670006A00B9655B /* ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
-		3DF2A9A3267000ED00B9655B /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		6900F5E021BF4726007AFBB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F21312D61E0481F80029E33F /* ChatClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatClient.h; path = Clients/ChatClient.h; sourceTree = "<group>"; };
 		F21312D71E0481F80029E33F /* ChatClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatClient.m; path = Clients/ChatClient.m; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		F264BD9F1D7F4F0400275D46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F264BDA01D7F4F0400275D46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F264BDAD1D7F4F0500275D46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F264BDB51D7F503300275D46 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuViewController.xib; path = "View Controllers/MenuViewController.xib"; sourceTree = "<group>"; };
 		F264BDBD1D7F52E500275D46 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F264BDD51D7F642200275D46 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = "View Controllers/LoginViewController.xib"; sourceTree = "<group>"; };
 		F273B63F1D95BD500069037F /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = Models/Message.h; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		F21312DC1E0485A50029E33F /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				3DAF1A3A267054E800B06F5A /* UtilsAnime.swift */,
 				F2603FCD202A407C001BCA22 /* AnimationViewController.swift */,
 				F21312DF1E0485B50029E33F /* AnimationViewController.xib */,
 			);
@@ -144,7 +147,7 @@
 		F273B62E1D95B1BE0069037F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3DF2A9A12670006A00B9655B /* ChatTableViewCell.xib */,
+				3DAF1A3E2671082000B06F5A /* ChatTableViewCell.xib */,
 				3D5D93FF266FC59A008C5844 /* ChatTableViewCell.swift */,
 			);
 			name = Cells;
@@ -170,8 +173,8 @@
 		F2837BEB1D9AE96D00A57AC8 /* Main Menu */ = {
 			isa = PBXGroup;
 			children = (
+				3DAF1A4226710AE900B06F5A /* MenuViewController.xib */,
 				F2603FD3202A4092001BCA22 /* MenuViewController.swift */,
-				F264BDB51D7F503300275D46 /* MenuViewController.xib */,
 			);
 			name = "Main Menu";
 			sourceTree = "<group>";
@@ -179,7 +182,7 @@
 		F2837BEC1D9AE97700A57AC8 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				3DF2A9A3267000ED00B9655B /* ChatViewController.xib */,
+				3DAF1A402671084600B06F5A /* ChatViewController.xib */,
 				F2603FCF202A4083001BCA22 /* ChatViewController.swift */,
 			);
 			name = Chat;
@@ -267,10 +270,10 @@
 			files = (
 				F264BDD71D7F642200275D46 /* LoginViewController.xib in Resources */,
 				F264BDBE1D7F52E500275D46 /* LaunchScreen.xib in Resources */,
-				3DF2A9A4267000ED00B9655B /* ChatViewController.xib in Resources */,
-				F264BDB71D7F503300275D46 /* MenuViewController.xib in Resources */,
+				3DAF1A412671084600B06F5A /* ChatViewController.xib in Resources */,
 				6900F5E121BF4726007AFBB8 /* Assets.xcassets in Resources */,
-				3DF2A9A22670006A00B9655B /* ChatTableViewCell.xib in Resources */,
+				3DAF1A3F2671082000B06F5A /* ChatTableViewCell.xib in Resources */,
+				3DAF1A4326710AE900B06F5A /* MenuViewController.xib in Resources */,
 				F21312E11E0485B50029E33F /* AnimationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +296,7 @@
 				F21312DB1E0481F80029E33F /* LoginClient.m in Sources */,
 				3DF2A9A0266FFFB900B9655B /* Extensions.swift in Sources */,
 				F264BD9E1D7F4F0400275D46 /* main.m in Sources */,
+				3DAF1A3B267054E800B06F5A /* UtilsAnime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
