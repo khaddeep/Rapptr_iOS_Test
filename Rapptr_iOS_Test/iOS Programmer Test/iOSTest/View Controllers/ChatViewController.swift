@@ -31,23 +31,19 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        client = ChatClient()
         messages = [Message]()
         configureTable(tableView: chatTable)
         title = "Chat"
-        
-        // TODO: Remove test data when we have actual data from the server loaded
-        messages?.append(Message(testName: "James", withTestMessage: "Hey Guys!"))
-        messages?.append(Message(testName:"Paul", withTestMessage:"What's up?"))
-        messages?.append(Message(testName:"Amy", withTestMessage:"Hey! :)"))
-        messages?.append(Message(testName:"James", withTestMessage:"Want to grab some food later?"))
-        messages?.append(Message(testName:"Paul", withTestMessage:"Sure, time and place?"))
-        messages?.append(Message(testName:"Amy", withTestMessage:"YAS! I am starving!!!"))
-        messages?.append(Message(testName:"James", withTestMessage:"1 hr at the Local Burger sound good?"))
-        messages?.append(Message(testName:"Paul", withTestMessage:"Sure thing"))
-        messages?.append(Message(testName:"Amy", withTestMessage:"See you there :P"))
-        
-        chatTable.reloadData()
+        // Fetch the data from the server
+        client?.fetchChatData({ (response) in
+            self.messages = response
+            DispatchQueue.main.async {
+                self.chatTable.reloadData() // Reloading the tableview after data is fetched
+            }
+        }, withError: { (error) in
+            Utils.showAlertMessageWithOK(message: error ?? "Error", parentView: self)
+        })
     }
     
     // MARK: - Private
@@ -56,6 +52,9 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ChatTableViewCell", bundle: nil), forCellReuseIdentifier: "ChatTableViewCell")
         tableView.tableFooterView = UIView(frame: .zero)
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 58.0
+        tableView.separatorStyle = .none
     }
     
     // MARK: - UITableViewDataSource
@@ -73,14 +72,12 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return messages!.count
     }
     
-    // MARK: - UITableViewDelegate
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 58.0
-    }
-    
     // MARK: - IBAction
     @IBAction func backAction(_ sender: Any) {
         let mainMenuViewController = MenuViewController()
         self.navigationController?.pushViewController(mainMenuViewController, animated: true)
     }
 }
+
+
+
