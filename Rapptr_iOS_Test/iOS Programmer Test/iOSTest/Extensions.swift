@@ -82,6 +82,15 @@ extension UIImageView {
         guard let url = URL(string: link) else { return }
         downloaded(from: url, contentMode: mode)
     }
+    
+    func rotate(speed: CFTimeInterval) {
+            let rotation : CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
+            rotation.toValue = NSNumber(value: Double.pi * 2)
+            rotation.duration = speed
+            rotation.isCumulative = false
+            rotation.repeatCount = Float.greatestFiniteMagnitude
+            self.layer.add(rotation, forKey: "rotationAnimation")
+        }
 }
 
 extension UITextField {

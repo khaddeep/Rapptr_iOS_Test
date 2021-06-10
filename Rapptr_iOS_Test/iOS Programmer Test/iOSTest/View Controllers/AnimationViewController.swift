@@ -36,7 +36,9 @@ class AnimationViewController: UIViewController {
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(AnimationViewController.draggedView(_:)))
         imgLogo.isUserInteractionEnabled = true
         imgLogo.addGestureRecognizer(panGesture)
+        imgLogo.rotate(speed: 10)
     }
+    
     
     @objc func draggedView(_ sender:UIPanGestureRecognizer){
         self.view.bringSubviewToFront(imgLogo)
