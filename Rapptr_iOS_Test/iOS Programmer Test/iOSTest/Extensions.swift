@@ -16,7 +16,7 @@ struct Utils {
         alertController.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
         parentView.present(alertController, animated: true, completion: nil)
     }
-   
+    
     
     static func showAlertMessage(title: String, message: String, yesButtonTitle: String, noButtonTitle: String, parentView: UIViewController, completion: @escaping (_ value: Bool) -> Void) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
@@ -30,18 +30,18 @@ struct Utils {
     
     static func hexStringToUIColor (hex:String) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
-
+        
         if (cString.hasPrefix("#")) {
             cString.remove(at: cString.startIndex)
         }
-
+        
         if ((cString.count) != 6) {
             return UIColor.gray
         }
-
+        
         var rgbValue:UInt64 = 0
         Scanner(string: cString).scanHexInt64(&rgbValue)
-
+        
         return UIColor(
             red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
             green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
@@ -50,7 +50,7 @@ struct Utils {
         )
     }
     
-   static func fadeInOut(image: UIImageView, minOpacity: CGFloat, maxOpacity: CGFloat, duration: TimeInterval) {
+    static func fadeInOut(image: UIImageView, minOpacity: CGFloat, maxOpacity: CGFloat, duration: TimeInterval) {
         image.alpha=minOpacity
         UIView.animate(withDuration: duration, animations:{
             image.alpha=maxOpacity
@@ -71,7 +71,7 @@ extension UIImageView {
                 let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
                 let data = data, error == nil,
                 let image = UIImage(data: data)
-                else { return }
+            else { return }
             DispatchQueue.main.async() { [weak self] in
                 self?.image = image
             }
