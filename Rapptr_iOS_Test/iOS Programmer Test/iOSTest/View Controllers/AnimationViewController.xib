@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimationViewController">
             <connections>
+                <outlet property="btnFadeInOut" destination="R4X-eb-ZnV" id="WTZ-F9-rt7"/>
                 <outlet property="imgLogo" destination="5DT-RY-uzd" id="e9o-0d-le9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

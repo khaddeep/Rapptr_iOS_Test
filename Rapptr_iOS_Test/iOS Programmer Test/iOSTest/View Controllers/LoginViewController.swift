@@ -6,7 +6,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     /**
      * =========================================================================================
@@ -42,16 +42,19 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         txtEmail.setLeftPaddingPoints(24)
         txtPassword.setLeftPaddingPoints(24)
-        DispatchQueue.main.async {
                 self.txtEmail.becomeFirstResponder()
-                self.txtPassword.becomeFirstResponder()
-            }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+
     
     // MARK: - Actions
     @IBAction func backAction(_ sender: Any) {
@@ -61,6 +64,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func didPressLoginButton(_ sender: Any) {
         // get login details from the view
+       
         if txtEmail.text == "" || txtPassword.text == ""
               {
             Utils.showAlertMessageWithOK(message: "Enter Username and Password", parentView: self)
