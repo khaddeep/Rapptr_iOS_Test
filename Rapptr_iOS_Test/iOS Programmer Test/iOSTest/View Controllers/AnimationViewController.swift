@@ -34,14 +34,14 @@ class AnimationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(AnimationViewController.draggedView(_:)))
-            imgLogo.isUserInteractionEnabled = true
-            imgLogo.addGestureRecognizer(panGesture)
+        imgLogo.isUserInteractionEnabled = true
+        imgLogo.addGestureRecognizer(panGesture)
     }
     
     @objc func draggedView(_ sender:UIPanGestureRecognizer){
         self.view.bringSubviewToFront(imgLogo)
         let translation = sender.translation(in: self.view)
-       imgLogo.center = CGPoint(x: imgLogo.center.x + translation.x, y: imgLogo.center.y + translation.y)
+        imgLogo.center = CGPoint(x: imgLogo.center.x + translation.x, y: imgLogo.center.y + translation.y)
         sender.setTranslation(CGPoint.zero, in: self.view)
     }
     
@@ -57,7 +57,7 @@ class AnimationViewController: UIViewController {
             btnFadeInOut.setTitle("Fade Out", for: .normal)
             isFadedIn=0
         }
-       else if isFadedIn==0 {
+        else if isFadedIn==0 {
             Utils.fadeInOut(image: imgLogo, minOpacity: 0, maxOpacity: 1, duration: 3)
             btnFadeInOut.setTitle("Fade In", for: .normal)
             isFadedIn=1

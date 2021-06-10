@@ -40,7 +40,6 @@
             errorBlock(error.localizedDescription);
             dispatch_semaphore_signal(sema);
         } else {
-            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
             NSError *parseError = nil;
             NSMutableDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&parseError];
             NSDictionary *parsedObject = [[NSDictionary alloc] initWithDictionary: responseDictionary];
