@@ -35,9 +35,8 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var navBar: UINavigationBar!
     
     // MARK: - Lifecycle
-    override func viewDidLoad() {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidLoad()
-
     }
     
     // MARK: - Actions

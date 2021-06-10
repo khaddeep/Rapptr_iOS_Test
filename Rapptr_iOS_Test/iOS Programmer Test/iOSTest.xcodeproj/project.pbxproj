@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3D5D9401266FC59B008C5844 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D93FF266FC59A008C5844 /* ChatTableViewCell.swift */; };
-		3DAF1A3B267054E800B06F5A /* UtilsAnime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF1A3A267054E800B06F5A /* UtilsAnime.swift */; };
 		3DAF1A3F2671082000B06F5A /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF1A3E2671082000B06F5A /* ChatTableViewCell.xib */; };
 		3DAF1A412671084600B06F5A /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF1A402671084600B06F5A /* ChatViewController.xib */; };
 		3DAF1A4326710AE900B06F5A /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF1A4226710AE900B06F5A /* MenuViewController.xib */; };
@@ -31,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		3D5D93FF266FC59A008C5844 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
-		3DAF1A3A267054E800B06F5A /* UtilsAnime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsAnime.swift; sourceTree = "<group>"; };
 		3DAF1A3E2671082000B06F5A /* ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		3DAF1A402671084600B06F5A /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		3DAF1A4226710AE900B06F5A /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 		F21312DC1E0485A50029E33F /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				3DAF1A3A267054E800B06F5A /* UtilsAnime.swift */,
 				F2603FCD202A407C001BCA22 /* AnimationViewController.swift */,
 				F21312DF1E0485B50029E33F /* AnimationViewController.xib */,
 			);
@@ -296,7 +293,6 @@
 				F21312DB1E0481F80029E33F /* LoginClient.m in Sources */,
 				3DF2A9A0266FFFB900B9655B /* Extensions.swift in Sources */,
 				F264BD9E1D7F4F0400275D46 /* main.m in Sources */,
-				3DAF1A3B267054E800B06F5A /* UtilsAnime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

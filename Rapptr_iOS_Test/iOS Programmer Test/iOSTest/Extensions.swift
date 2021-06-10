@@ -1,9 +1,8 @@
 //
-//  Extensions.swift
+//  Animate.swift
 //  iOSTest
 //
-//
-//  Copyright © 2021 D&ATechnologies. All rights reserved.
+//  Created by Dypson Khadka on 13/03/1400 AP.
 //
 
 import Foundation
@@ -50,6 +49,14 @@ struct Utils {
             alpha: CGFloat(1.0)
         )
     }
+    
+   static func fadeInOut(image: UIImageView, minOpacity: CGFloat, maxOpacity: CGFloat, duration: TimeInterval) {
+        image.alpha=minOpacity
+        UIView.animate(withDuration: duration, animations:{
+            image.alpha=maxOpacity
+        })
+    }
+    
 }
 
 

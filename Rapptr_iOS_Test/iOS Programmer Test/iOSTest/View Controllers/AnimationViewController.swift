@@ -23,11 +23,26 @@ class AnimationViewController: UIViewController {
      *    section in Swfit to show off your skills. Anything your heart desires!
      *
      **/
+    @IBOutlet weak var btnFadeInOut: UIButton!
     
     @IBOutlet weak var imgLogo: UIImageView!
+    
+    var isFadedIn: Int=1
+    var panGesture       = UIPanGestureRecognizer()
     // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        panGesture = UIPanGestureRecognizer(target: self, action: #selector(AnimationViewController.draggedView(_:)))
+            imgLogo.isUserInteractionEnabled = true
+            imgLogo.addGestureRecognizer(panGesture)
+    }
+    
+    @objc func draggedView(_ sender:UIPanGestureRecognizer){
+        self.view.bringSubviewToFront(imgLogo)
+        let translation = sender.translation(in: self.view)
+       imgLogo.center = CGPoint(x: imgLogo.center.x + translation.x, y: imgLogo.center.y + translation.y)
+        sender.setTranslation(CGPoint.zero, in: self.view)
     }
     
     // MARK: - Actions
@@ -37,7 +52,15 @@ class AnimationViewController: UIViewController {
     }
     
     @IBAction func didPressFade(_ sender: Any) {
-       let anime = UtilsAnime();
-        anime.fadeInOut(image: imgLogo, minOpacity: 0, maxOpacity: 1, duration: 3)
+        if isFadedIn==1 {
+            Utils.fadeInOut(image: imgLogo, minOpacity: 1, maxOpacity: 0, duration: 3)
+            btnFadeInOut.setTitle("Fade Out", for: .normal)
+            isFadedIn=0
+        }
+       else if isFadedIn==0 {
+            Utils.fadeInOut(image: imgLogo, minOpacity: 0, maxOpacity: 1, duration: 3)
+            btnFadeInOut.setTitle("Fade In", for: .normal)
+            isFadedIn=1
+        }
     }
 }
